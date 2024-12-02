@@ -14,7 +14,7 @@ const port = process.env.PORT || 4000;
 connectCloudinary();
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://taskertodo.vercel.app",
     credentials: true
 }))
 
