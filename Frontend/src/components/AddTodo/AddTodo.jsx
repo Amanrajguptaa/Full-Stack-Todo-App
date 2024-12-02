@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const AddTodo = () => {
-  const backendUrl = "http://localhost:8000";
+  const backendUrl = "https://full-stack-todo-app-8285.onrender.com";
 
 
   const navigate = useNavigate();

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const ViewTodo = () => {
-  const backendUrl = "http://localhost:8000";
+  const backendUrl = "https://full-stack-todo-app-8285.onrender.com";
   const token = localStorage.getItem("token");
 
   const [todo, setTodo] = useState({
