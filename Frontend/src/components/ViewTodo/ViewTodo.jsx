@@ -133,7 +133,7 @@ const ViewTodo = () => {
 >
   {/* Header Section */}
   <div className="flex justify-between items-start">
-    <h2 className="text-2xl font-semibold text-gray-800">{item.title}</h2>
+    <h2 className="font-bold font-mathilde text-5xl text-gray-800">{item.title}</h2>
     <span
       className={`inline-block px-3 py-1 text-sm font-bold rounded-full ${
         item.tag === "Urgent"
@@ -148,7 +148,7 @@ const ViewTodo = () => {
   </div>
 
   {/* Description */}
-  <p className="text-gray-600 mt-4 mb-6 leading-relaxed">{item.description}</p>
+  <p className="text-gray-600 mt-4 mb-6  font-mathilde text-5xl leading-none">{item.description}</p>
 
   <div className="flex items-center text-sm text-gray-500 mb-4 font-bold">
     <svg

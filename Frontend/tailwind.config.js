@@ -8,7 +8,8 @@ export default {
   	extend: {
 		fontFamily: {
 			horizon: ['CustomFont', 'sans-serif'],
-			horizontal: ['CustomFont2', 'sans-serif'],
+			mathilde: ['CustomFont2', 'sans-serif'],
+			megasari: ['CustomFont3', 'sans-serif'],
 		  },
   		borderRadius: {
   			lg: 'var(--radius)',
