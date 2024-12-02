@@ -17,8 +17,8 @@ const todoSchema = new mongoose.Schema({
     },
     status:{
         type:String,
-        enum: ['Pending', 'Inprogress', 'Completed','Started'],
-        default:'Inprogress'
+        enum: ['In Progress','Completed'],
+        default:'In Progress'
     },
     tag:{
         type:String,

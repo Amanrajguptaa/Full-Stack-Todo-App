@@ -64,7 +64,7 @@ const loginUser = async (req, res) => {
         process.env.JWT_SECRET, 
       );
   
-      res.status(200).json({ success: true, token });
+      res.status(200).json({ success: true, token ,user });
     } catch (error) {
       return res.status(500).json({ message: "User Login Failed", error: error.message });
     }

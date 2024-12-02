@@ -71,6 +71,22 @@ const updateTodo = async (req, res) => {
 };
 
 
+const changeStatus = async(req,res) =>{
+    const {id}= req.params;
+    const userId = req.user.id;
+    try {
+        const todo = await todoModel.findOneAndUpdate( { _id: id, user: userId },{status:"Completed"},{new:true})
+        if(!todo){
+            return res.status(404).json({message:"Todo not found or not authorized"})
+        }
+        res.status(200).json({message:"Todo status updated successfully",todo:todo})
+
+    } catch (error) {
+        res.status(500).json({ message: 'Failed to update todo', error: error.message });
+    }
+}
+
+
 
 const deleteTodo = async (req, res) => {
     try {
@@ -92,4 +108,4 @@ const deleteTodo = async (req, res) => {
 
 
 
-export{addTodo,getTodos,updateTodo,deleteTodo,getTodoById}
+export{addTodo,getTodos,updateTodo,deleteTodo,getTodoById,changeStatus}
