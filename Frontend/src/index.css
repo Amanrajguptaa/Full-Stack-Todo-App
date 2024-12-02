@@ -6,3 +6,17 @@
     --radius: 0.5rem
   }
 }
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/public/horizon.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CustomFont2';
+  src: url('/public/horizontal.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

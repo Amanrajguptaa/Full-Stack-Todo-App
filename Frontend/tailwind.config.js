@@ -6,6 +6,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],  theme: {
   	extend: {
+		fontFamily: {
+			horizon: ['CustomFont', 'sans-serif'],
+			horizontal: ['CustomFont2', 'sans-serif'],
+		  },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

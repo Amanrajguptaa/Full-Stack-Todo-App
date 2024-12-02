@@ -42,7 +42,7 @@ const SignUp = () => {
 
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-orange-600 to-orange-500">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Sign Up</h2>
         <form onSubmit={(e)=>handleFormSubmit(e)}>

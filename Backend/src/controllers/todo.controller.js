@@ -2,7 +2,7 @@ import todoModel from "../models/todo.model.js";
 
 const addTodo = async (req, res) => {
     try {
-        const { title, description, tag } = req.body;
+        const { title, description, tag , dueDate , color } = req.body;
         const userId = req.user.id; 
 
         const newTodo = new todoModel({
@@ -10,6 +10,8 @@ const addTodo = async (req, res) => {
             title,
             description,
             tag,
+            dueDate,
+            color
         });
 
         await newTodo.save();

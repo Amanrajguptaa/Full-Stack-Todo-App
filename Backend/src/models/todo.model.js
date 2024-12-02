@@ -24,7 +24,16 @@ const todoSchema = new mongoose.Schema({
         type:String,
         enum:['Urgent','Normal','Less Important'],
         default:'Normal'
+    },
+    dueDate:{
+        type:Date,
+        required:true
+    },
+    color:{
+        type:String,
+        default:"#ffffff"
     }
+
 },{timestamps:true})
 
 const todoModel = mongoose.models.todo || mongoose.model('todo',todoSchema);
