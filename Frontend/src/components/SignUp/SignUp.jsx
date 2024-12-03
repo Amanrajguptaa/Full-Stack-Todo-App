@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 const SignUp = () => {
-  const backendUrl = "http://localhost:8000";
+  const backendUrl = "https://full-stack-todo-app-8285.onrender.com";
 
   const navigate = useNavigate();
 
